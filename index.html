@@ -1,135 +1,181 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Mundo das Tulipas</title>
+    <title>EPIC: The Musical - Uma Odisseia Musical</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Reset e Configurações Gerais */
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-color: #f9f6f0;
-            color: #333;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #0b132b;
+            color: #e0e1dd;
+        }
+
+        /* Cabeçalho */
         header {
-            background-color: #ff6b81;
-            color: white;
+            background: linear-gradient(rgba(11, 19, 43, 0.8), rgba(28, 37, 65, 0.9)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') no-repeat center/cover;
+            color: #1c2541;
             text-align: center;
-            padding: 2rem;
+            padding: 5rem 1rem;
+            border-bottom: 4px solid #5bc0be;
         }
+
+        header h1 {
+            font-size: 3rem;
+            color: #6fffe9;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-style: italic;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Conteúdo Principal */
         main {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 0 20px;
         }
-        .info-section {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+
+        .section-card {
+            background-color: #1c2541;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            border-left: 5px solid #5bc0be;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 15px auto;
+
+        h2 {
+            color: #6fffe9;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
+
+        p {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+        }
+
+        /* Lista de Sagas */
+        .saga-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             margin-top: 20px;
         }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
+
+        .saga-item {
+            background-color: #3a506b;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+            border: 1px solid #5bc0be;
+            transition: transform 0.2s, background-color 0.2s;
         }
-        th {
-            background-color: #ff6b81;
+
+        .saga-item:hover {
+            transform: translateY(-5px);
+            background-color: #5bc0be;
+            color: #0b132b;
+        }
+
+        /* Link/Botão do YouTube */
+        .youtube-btn {
+            display: inline-block;
+            background-color: #ff0000;
             color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
         }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+
+        .youtube-btn:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
         }
+
+        /* Rodapé */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            margin-top: 40px;
+            padding: 30px;
+            background-color: #0b132b;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #1c2541;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #5bc0be;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>A Beleza das Tulipas</h1>
-        <p>Descubra a história, as cores e o significado dessas flores fascinantes.</p>
+        <h1>EPIC: The Musical</h1>
+        <p>"A saga de um homem tentando voltar para casa."</p>
     </header>
 
     <main>
-        <section class="info-section">
-            <h2>Sobre as Tulipas</h2>
-            <p>As tulipas são flores da família das liláceas, conhecidas por suas cores vibrantes e formato característico de taça. Embora sejam fortemente associadas aos Países Baixos (Holanda), elas são originalmente nativas da Ásia Central e foram levadas para a Europa no século XVI.</p>
-            
-            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=80" alt="Campo de tulipas coloridas">
+        <section class="section-card">
+            <h2>O que é EPIC?</h2>
+            <p><strong>EPIC: The Musical</strong> é uma adaptação musical conceptual da Odisseia de Homero, criada pelo talentoso compositor e criador de conteúdo <strong>Jorge Rivera-Herrans</strong>. Dividido em sagas épicas, o musical conta a jornada do herói Ulisses (Odysseus) tentando retornar para sua esposa Penélope e seu filho Telêmaco após a Guerra de Troia.</p>
+            <p>O projeto ganhou proporções gigantescas na internet, movido por uma comunidade apaixonada no YouTube, TikTok e plataformas de áudio, onde os fãs acompanham os bastidores de animações, audições e os lançamentos oficiais.</p>
         </section>
 
-        <section class="info-section">
-            <h2>Significado das Cores</h2>
-            <p>Cada cor de tulipa pode carregar um simbolismo diferente. Veja abaixo alguns dos significados mais comuns:</p>
+        <section class="section-card">
+            <h2>As Sagas Conhecidas</h2>
+            <p>O musical é lançado em blocos de músicas chamados "Sagas". Cada uma foca em uma parte específica da jornada mitológica:</p>
             
-            <table>
-                <thead>
-                    <tr>
-                        <th>Cor da Tulipa</th>
-                        <th>Significado Principal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Vermelha</strong></td>
-                        <td>Amor verdadeiro e eterno.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Amarela</strong></td>
-                        <td>Inocência, alegria e pensamentos ensolarados.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Branca</strong></td>
-                        <td>Pedido de perdão, pureza e paz.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Roxa</strong></td>
-                        <td>Realeza, nobreza e renascimento.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <ul class="saga-list">
+                <li class="saga-item">The Troy Saga</li>
+                <li class="saga-item">The Cyclops Saga</li>
+                <li class="saga-item">The Ocean Saga</li>
+                <li class="saga-item">The Circe Saga</li>
+                <li class="saga-item">The Underworld Saga</li>
+                <li class="saga-item">The Thunder Saga</li>
+            </ul>
         </section>
 
-        <section class="info-section">
-            <h2>Quer saber mais?</h2>
-            <p>Deixe seu e-mail para receber curiosidades e dicas de cultivo de tulipas.</p>
-            <form action="#" method="POST">
-                <div style="margin-bottom: 15px;">
-                    <label for="nome" style="display: block; margin-bottom: 5px;">Nome:</label>
-                    <input type="text" id="nome" name="nome" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="email" style="display: block; margin-bottom: 5px;">E-mail:</label>
-                    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
-                </div>
-                <button type="submit" style="background-color: #ff6b81; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 16px;">Enviar</button>
-            </form>
+        <section class="section-card" style="text-align: center;">
+            <h2>Acompanhe no YouTube</h2>
+            <p>Jorge Rivera-Herrans posta Reels, Shorts, clipes oficiais, prévias das composições e vídeos detalhando a produção e os significados ocultos nos instrumentos e nas letras.</p>
+            
+            <a href="https://www.youtube.com/@JorgeRiveraHerrans" target="_blank" class="youtube-btn">
+                Inscreva-se no Canal Oficial
+            </a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Página Criada por um Entusiasta da Natureza.</p>
+        <p>&copy; 2026 - Página de fã criada para celebrar a obra de Jorge Rivera-Herrans.</p>
+        <p>Acompanhe também as discussões e animações da comunidade de animadores do YouTube!</p>
     </footer>
 
 </body>
